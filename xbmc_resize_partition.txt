@@ -1,0 +1,45 @@
+* SSH en tant que ROOT
+	changer de répertoire pour aller à la racine
+	cd /
+
+* Empêcher XBMC de redémarrer :
+	touch /var/lock/xbmc.disabled
+
+* Stopper XBMC afin de démonter le volume /storage :
+	ps faux | grep xbmc
+	killall -9 xbmc.bin
+
+* umount /storage
+	vérifier qu’aucun autre point de montages n’est présent sur /storage
+
+* Verify mounts:
+	mount
+
+* Lancer l’utilitaire parted
+	parted /dev/mmcblk0 (partition sur laquelle se trouve /storage)
+	Modifier l’affichage des secteurs du disque dur :
+		unit S (pour afficher le nombre de secteurs)
+	Afficher les partitions, faire attention à la valeur du secteur de démarrage pour la partition ici /dev/mmcblk0 et comme valeur pour moi 258048) :
+		p
+	Supprimer la partition :
+		rm 2 (2 est le numéro de la partition)
+	Recréer la partition en utilisant le numéro du secteur (vu plus haut, soit 258048)  et -1 en dernier argument (cela précise que l’on va utiliser l’intégralité de l’espace restant) :
+		mkpart primary 258048 -1
+	Quitter parted (quit)
+
+* Lancer e2fsck (va appliquer les changements)
+	e2fsck -f /dev/mmcblk0p2
+
+* Lancer resize2fs (va modifier la taille de la partition)
+	resize2fs /dev/mmcblk0p2
+
+* Remonter la partition : 
+	mount /dev/mmcblk0p2 /storage
+
+* Vérifier la taille utiliser sur le disque :
+	df -h
+
+* Supprimer le fichier créer en tout début empêchant le redémarrage de XBMC :
+	rm /var/lock/xbmc.disabled
+
+* XBMC redémarre
