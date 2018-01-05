@@ -34,6 +34,7 @@ public class HtmlParserTest {
 }
 ```
 
+## Class
 ```java
 import com.google.gwt.regexp.shared.MatchResult;
 import com.google.gwt.regexp.shared.RegExp;
