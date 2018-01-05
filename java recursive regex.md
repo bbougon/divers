@@ -41,7 +41,7 @@ import com.google.gwt.regexp.shared.RegExp;
 
 public class HtmlParser {
 
-    //https://regex101.com/r/Bg9xUt/2
+    //https://regex101.com/r/Bg9xUt/3
 
     private static final String HREF_REGEX = "(<a.*?\">(\\D.*|\\D*)<\\/a>)";
     private final RegExp compile = RegExp.compile(HREF_REGEX);
