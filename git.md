@@ -2,12 +2,36 @@
 
 ```ini
 
-    [user]
-    name = NAME
-    email = EMAIL
-    
-    [alias]
-    lg = log -p
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Bertrand Bougon
+#	email = bertrand.bougon@gmail.com
+[user]
+	name = Bertrand Bougon
+	email = bertrand.bougon@gmail.com
+
+[alias]
+	lg = log -p
+    	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
 ```
