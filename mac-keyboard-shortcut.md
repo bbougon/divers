@@ -5,7 +5,7 @@
 CMD + SHIFT + .
 ```
 
-## Capture d'écran
+## Capture d'écran
 ```
 SHIF + CMD + 4
 ```
