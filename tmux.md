@@ -1,4 +1,4 @@
-Fichier tmux.conf
+# Configuration
 
 ```bash
 set -g default-terminal "xterm-256color"
@@ -45,7 +45,7 @@ source-file "$HOME/.tmux-gitbar/tmux-gitbar.tmux"
 
 ```
 
-CheatSheet
+# Cheatsheet
 
 start new with session name:
 
