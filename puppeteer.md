@@ -1,1 +1,1 @@
-`sudo npm install --save puppeteer --unsafe-perm=true
+`sudo npm install --save puppeteer --unsafe-perm=true`
