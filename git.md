@@ -1,6 +1,6 @@
 # commandes
 
-* Montrer les fichiers modifiés lors d'un commit
+**Montrer les fichiers modifiés lors d'un commit**
 
 ```bash
 git show --pretty="" --name-only [REVISION]
