@@ -2,7 +2,7 @@ Au cours d’une discussion sur le partage de CV, est venue la réflexion suivan
 à des fins carriériste:
 “En fait, je suis dans le même cas @Bertrand Après, le conseil "mets a jour ton cv tout les trois mois" est 
 sans doute un bon conseil pour faire carrière (à voir après ce que l'on entend par la, et si on le veut) 
-- en tout cas, le gars qui m'avait donné ce conseil s'en est bien sorti (la encore, si monter en grade en SSII 
+en tout cas, le gars qui m'avait donné ce conseil s'en est bien sorti (la encore, si monter en grade en SSII 
 est un bon objectif)”.
 
 Je n’ai pu m’empêcher de répondre de manière un peu ferme (et probablement aggressive):
