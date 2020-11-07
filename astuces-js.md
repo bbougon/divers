@@ -44,7 +44,7 @@ describe('Date time provider', function () {
         dateProvider = provider();
     });
 
-    it('should add the expected amount of unit', () => {
+    it('should add the expected amount of hours', () => {
         let provider = new dateProvider.prototype.constructor();
 
         let date = provider.add(1, "hours");
