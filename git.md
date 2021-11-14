@@ -6,6 +6,11 @@
 git show --pretty="" --name-only [REVISION]
 ```
 
+**Revert last commit**
+```bash
+git reset --soft HEAD~1
+```
+
 # .gitconfig
 
 ```ini
